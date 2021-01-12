@@ -1,4 +1,5 @@
-Learning Spectral-Spatial Prior via 3DDnCNN for Hyperspectral Image Deconvolution
+# Learning Spectral-Spatial Prior via 3DDnCNN for Hyperspectral Image Deconvolution
+
 Steps:
 
 1. Run cave_processing.py to process the public dataset CAVE;
