@@ -18,7 +18,7 @@ def get_blurred(img, kernel, noise_sigma):
     img_blurred = np.clip(img_blurred, 0, 1)
     return img_blurred
 
-def gaussian_kernel_2d(kernel_size=15, kernel_sigma=2.4):
+def gaussian_kernel_2d(kernel_size=15, kernel_sigma=1.6):
     kx = cv2.getGaussianKernel(kernel_size,kernel_sigma)
     ky = cv2.getGaussianKernel(kernel_size,kernel_sigma)
     return np.multiply(kx,np.transpose(ky)) 

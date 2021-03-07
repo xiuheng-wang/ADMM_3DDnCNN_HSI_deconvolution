@@ -49,7 +49,7 @@ num_images = 12
 model_path = args.model_path + 'hsidb_epoch500.pkl'
 
 # select blur kernel and hyperparameters
-kernel = gaussian_kernel_2d()
+kernel = gaussian_kernel_2d(kernel_size=15, kernel_sigma=1.6)
 rho = 0.06  # set rho = 0.8 for the scenario (c) due to its different noise level
 Iteration = 20
 
@@ -57,7 +57,7 @@ Iteration = 20
 # It is strongly recommended to use GPU mode as its speed is extremely faster than CPU mode.
 # If your GPU memory is limited, we recommend to crop the input of the 3DDnCNN into serveral pathes
 # and integrate them after denoising.
-mode = 1
+mode = 1 
 if mode:
 ##### GPU mode #####
     device="cuda:0"
@@ -149,8 +149,8 @@ if __name__ == '__main__':
         save_image(z_cc, img_cc, deblurred_image_dir, i)
         print('after deblurring: ', 'MSE: ', mse(z_cc, img_cc), 'PSNR: ', psnr(z_cc,img_cc))
         print('Done')
-    #     plt.plot(MSE[i])
+        plt.plot(MSE[i])
 
-    # scio.savemat(deblurred_image_dir + 'RMSE.mat', {'RMSE':MSE})
-    # plt.savefig(deblurred_image_dir + 'RMSE.png')
-    # plt.show()
+    scio.savemat(deblurred_image_dir + 'RMSE.mat', {'RMSE':MSE})
+    plt.savefig(deblurred_image_dir + 'RMSE.png')
+    plt.show()

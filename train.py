@@ -20,7 +20,7 @@ from torch.utils.data import DataLoader
 import argparse
 
 import  os
-os.environ["CUDA_VISIBLE_DEVICES"]="0, 1, 2, 3"
+os.environ["CUDA_VISIBLE_DEVICES"]="0, 1"
 import time
 
 from dataset import Dataset_cave_train, Dataset_cave_val

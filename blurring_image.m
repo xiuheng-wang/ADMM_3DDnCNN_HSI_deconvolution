@@ -32,7 +32,7 @@ for i = 1:6
     for j = 1:12
         load(fullfile(strcat( folderTest, int2str(j-1), '.mat' )));
         img_blurred = imfilter(im2double(permute(img, [2, 3, 1])), kernel, 'circular', 'conv');
-        img_blurred = permute(img_blurred, [3, 1, 2]) + sigma * ones(size(img));
+        img_blurred = permute(img_blurred, [3, 1, 2]) + sigma * randn(size(img));
         save(strcat(folderResult, int2str(j-1), '.mat'), 'img_blurred');
     end
 end
