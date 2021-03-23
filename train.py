@@ -57,7 +57,7 @@ def main():
     model = Net(num_blocks=args.num_blocks, num_kernels=args.num_kernels)
 
     # multi-GPU setup
-    device = torch.device("cuda:0, 1, 2, 3" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:0, 1" if torch.cuda.is_available() else "cpu")
     model = nn.DataParallel(model)
 
     model=model.to(device=device, dtype=torch.float) # float32
