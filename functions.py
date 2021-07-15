@@ -145,7 +145,7 @@ def psf2otf(psf, shape):
         psf = np.roll(psf, -int(axis_size / 2), axis=axis)
 
     # Compute the OTF
-    # otf = np.fft.fft2(psf) # 坑坑坑！
+    # otf = np.fft.fft2(psf)
     otf = fft2(psf)
 
     # Estimate the rough number of operations involved in the FFT
