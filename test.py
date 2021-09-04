@@ -27,7 +27,7 @@ os.environ["CUDA_VISIBLE_DEVICES"]="0"
 # ===========================================================
 # Test settings
 # ===========================================================
-parser = argparse.ArgumentParser(description='CAVE database superresolution:')
+parser = argparse.ArgumentParser(description='CAVE database denoising:')
 # model storage path
 parser.add_argument('--sigma', type=float, default=0.04, help='Set standard deviation of Gaussian noise ')
 # model configuration
