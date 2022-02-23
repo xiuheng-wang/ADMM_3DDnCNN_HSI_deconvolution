@@ -17,7 +17,7 @@ class Net(nn.Module):
         out2 = self.hidden_layers(out1)
         out3 = self.output(out2)
 
-        return torch.add(input_hsi, out3)
+        return torch.sub(input_hsi, out3)
 
 class P3D_block(nn.Module):
     def __init__(self, num_kernels):
