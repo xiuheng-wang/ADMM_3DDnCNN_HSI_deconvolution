@@ -20,11 +20,11 @@ For any questions, feel free to email me at xiuheng.wang@mail.nwpu.edu.cn.
 
 If this code is helpful for you, please cite our paper as follows:
 
-@inproceedings{wang2020learning,
-  title={Learning Spectral-Spatial Prior Via 3DDNCNN for Hyperspectral Image Deconvolution},
-  author={Wang, Xiuheng and Chen, Jie and Richard, C{\'e}dric and Brie, David},
-  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={2403--2407},
-  year={2020},
-  organization={IEEE}
-}
+    @inproceedings{wang2020learning,
+      title={Learning Spectral-Spatial Prior Via 3DDNCNN for Hyperspectral Image Deconvolution},
+      author={Wang, Xiuheng and Chen, Jie and Richard, C{\'e}dric and Brie, David},
+      booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+      pages={2403--2407},
+      year={2020},
+      organization={IEEE}
+    }
