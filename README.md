@@ -20,6 +20,12 @@ For any questions, feel free to email me at xiuheng.wang@mail.nwpu.edu.cn.
 
 If this code is helpful for you, please cite our paper as follows:
 
+    @article{wang2023tuning,
+      title={Tuning-free Plug-and-Play Hyperspectral Image Deconvolution with Deep Priors},
+      author={Wang, Xiuheng and Chen, Jie and Richard, C{\'e}dric},
+      journal={IEEE Transactions on Geoscience and Remote Sensing},
+      year={2023}
+    }
     @inproceedings{wang2020learning,
       title={Learning Spectral-Spatial Prior Via 3DDNCNN for Hyperspectral Image Deconvolution},
       author={Wang, Xiuheng and Chen, Jie and Richard, C{\'e}dric and Brie, David},
